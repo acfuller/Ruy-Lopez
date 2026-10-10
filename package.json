@@ -1,0 +1,44 @@
+{
+  "name": "ruy-lopez-chess-trainer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline Ruy López learning studio",
+  "author": "Ruy López Learning Studio",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node --test tests/core.test.js",
+    "test:ui": "node tests/ui.mjs",
+    "desktop": "electron .",
+    "package": "npm run build && electron-builder --win dir"
+  },
+  "dependencies": {
+    "chess.js": "1.4.0"
+  },
+  "devDependencies": {
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "playwright": "1.58.2",
+    "vite": "8.3.4"
+  },
+  "build": {
+    "electronDist": "node_modules/electron/dist",
+    "appId": "local.ruylopez.trainer",
+    "productName": "Ruy López Chess Trainer",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "dir",
+      "signAndEditExecutable": false
+    },
+    "asar": true
+  }
+}

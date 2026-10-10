@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "mode": "browser",
+  "errors": [],
+  "saved": {
+    "lessons": [
+      "first"
+    ],
+    "practice": {
+      "root-w": {
+        "attempts": 3,
+        "misses": 2,
+        "streak": 1,
+        "solved": true,
+        "due": 1791692452726
+      },
+      "root-b": {
+        "attempts": 1,
+        "misses": 0,
+        "streak": 1,
+        "solved": true,
+        "due": 1791692452775
+      }
+    },
+    "quiz": {
+      "0": true
+    }
+  },
+  "tests": [
+    "7 sections",
+    "7 branches and replay",
+    "illegal SAN rejection",
+    "legal board movement",
+    "3 complete verified games and play/pause/key positions",
+    "practice correct, illegal, detour, playable alternative, Black",
+    "quiz and lesson progress",
+    "reload persistence",
+    "390px no overflow"
+  ]
+}

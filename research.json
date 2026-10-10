@@ -1,0 +1,88 @@
+{
+  "title": "Ruy Lopez: verified sources, historical milestones, and three model games",
+  "annotation_policy": "All game notes are original teaching interpretations written for this project, not quotations or attributed annotations from the source. They are explanatory observations, not engine-verified evaluations. Ply is one-based: White's first move is ply 1; Black's first move is ply 2. The moves strings contain SAN only, without move numbers or result tokens; result is stored separately.",
+  "sources": [
+    {"id": "wikibooks-ruy", "title": "Wikibooks: Chess Opening Theory — Ruy Lopez / Spanish game", "url": "https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6/3._Bb5", "notes": "Fetched successfully with HTTP 200 using an identifying User-Agent. Provides the defining moves, Black's principal defenses, strategic explanations, and a history section. Historical dates are treated conservatively; it is an editable secondary reference."},
+    {"id": "wikipedia-ruy", "title": "Wikipedia: Ruy Lopez", "url": "https://en.wikipedia.org/wiki/Ruy_Lopez", "notes": "Fetched successfully with HTTP 200 using an identifying User-Agent. Cross-check for historical outline, Breyer 9...Nb8 and ...Nbd7 maneuver, Berlin defense, and the original Marshall game with 11...Nf6 rather than the modern main-line 11...c6."},
+    {"id": "pgnmentor-index", "title": "PGN Mentor: PGN files collection", "url": "https://www.pgnmentor.com/files.html", "notes": "Fetched successfully with HTTP 200. Its actual download links established the player archives /players/Capablanca.zip and /players/Fischer.zip and event file /events/WorldChamp2000.pgn. Do not use the nonexistent /files/players/... paths."},
+    {"id": "pgnmentor-capablanca", "title": "PGN Mentor: Capablanca game collection (ZIP containing Capablanca.pgn)", "url": "https://www.pgnmentor.com/players/Capablanca.zip", "notes": "HTTP 200; fetched archive contained Capablanca.pgn. Parsed 597 games and selected Capablanca–Marshall, New York, 1918, ECO C89, result 1-0. Source date is 1918.??.?? and round is unknown; no exact date has been invented. The selected record ends with 36.Bxf7+."},
+    {"id": "pgnmentor-fischer", "title": "PGN Mentor: Fischer game collection (ZIP containing Fischer.pgn)", "url": "https://www.pgnmentor.com/players/Fischer.zip", "notes": "HTTP 200; fetched archive contained Fischer.pgn. Parsed 827 games and selected Fischer–Spassky, St Stefan/Belgrade match, 1992, round 1, ECO C95, result 1-0. Source Date is 1992.??.??; Site is Belgrade despite the combined match Event label. Metadata is preserved below rather than silently corrected. Record ends with 50.Qe5."},
+    {"id": "pgnmentor-wcc2000", "title": "PGN Mentor: 2000 Kasparov–Kramnik world championship match PGN", "url": "https://www.pgnmentor.com/events/WorldChamp2000.pgn", "notes": "HTTP 200; parsed 15 games and selected round 1, 2000.10.08, London ENG, ECO C67, result 1/2-1/2. Source Event label is Braingames WCC. Record ends with 25...Nf5."}
+  ],
+  "history": [
+    {"period": "Late fifteenth century", "year": null, "text": "The opening appears in the Göttingen manuscript before Ruy Lopez's sixteenth-century book. The manuscript's dating is approximate, so this timeline does not assign a precise invention date.", "sources": ["wikibooks-ruy", "wikipedia-ruy"]},
+    {"period": "1561", "year": 1561, "text": "Spanish priest Ruy Lopez de Segura analyzed the opening in his chess book of 1561. The names Ruy Lopez and Spanish Opening commemorate him; they do not mean that he invented the opening.", "sources": ["wikibooks-ruy", "wikipedia-ruy"]},
+    {"period": "Mid-nineteenth century", "year": 1848, "text": "Carl Jaenisch's detailed analysis helped revive interest in the opening. Wikibooks cites his 1848 Chess Player's Chronicle treatment; Wikipedia also identifies an earlier December 1847 article in Le Palamède.", "sources": ["wikibooks-ruy", "wikipedia-ruy"]},
+    {"period": "1918", "year": 1918, "text": "Marshall's attacking pawn sacrifice against Capablanca in New York made the Marshall Attack famous. Capablanca won the recorded game. This historical example uses 11...Nf6, not the modern main-line 11...c6.", "sources": ["wikipedia-ruy", "pgnmentor-capablanca"]},
+    {"period": "1992", "year": 1992, "text": "The first game of the Fischer–Spassky rematch featured the Breyer Variation, identified by Black's 9...Nb8 retreat and subsequent ...Nbd7. Fischer won; this is an example of the variation in a historical match, not a claim about its origin.", "sources": ["pgnmentor-fischer", "wikipedia-ruy"]},
+    {"period": "2000", "year": 2000, "text": "Kramnik's use of the Berlin Defense against Kasparov in their world championship match renewed top-level interest in the defense. The first game reached the queenless Berlin position and ended in a draw after 25...Nf5.", "sources": ["wikibooks-ruy", "wikipedia-ruy", "pgnmentor-wcc2000"]}
+  ],
+  "games": [
+    {
+      "id": "capablanca-marshall-1918",
+      "title": "Capablanca–Marshall, New York 1918 — the original Marshall Attack",
+      "white": "Jose Raul Capablanca", "black": "Frank James Marshall", "event": "New York", "year": 1918, "result": "1-0", "variation": "Marshall Attack, original 11...Nf6 line (C89)",
+      "source": "https://www.pgnmentor.com/players/Capablanca.zip",
+      "source_id": "pgnmentor-capablanca",
+      "pgn_headers": {"Event": "New York", "Site": "New York", "Date": "1918.??.??", "Round": "?", "White": "Capablanca, Jose Raul", "Black": "Marshall, Frank James", "Result": "1-0", "ECO": "C89"},
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 Nf6 Re1 Bd6 h3 Ng4 Qf3 Qh4 d4 Nxf2 Re2 Bg4 hxg4 Bh2+ Kf1 Bg3 Rxf2 Qh1+ Ke2 Bxf2 Bd2 Bh4 Qh3 Rae8+ Kd3 Qf1+ Kc2 Bf2 Qf3 Qg1 Bd5 c5 dxc5 Bxc5 b4 Bd6 a4 a5 axb5 axb4 Ra6 bxc3 Nxc3 Bb4 b6 Bxc3 Bxc3 h6 b7 Re3 Bxf7+",
+      "notes": [
+        {"ply": 5, "text": "Original teaching interpretation: Bb5 pressures the knight that defends e5 while developing a piece and preparing castling; it is not an immediate forced win of a pawn."},
+        {"ply": 16, "text": "Original teaching interpretation: ...d5 is the Marshall break. Black opens the center before White's queenside pieces are developed and accepts a pawn deficit in return for active play."},
+        {"ply": 22, "text": "Original teaching interpretation: ...Nf6 distinguishes Marshall's historical treatment from the modern main-line ...c6. The knight immediately joins the kingside attacking plans."},
+        {"ply": 28, "text": "Original teaching interpretation: ...Qh4 teams the queen with the knight on g4 and bishop on d6. Count attackers and examine threats against the king before grabbing more material."},
+        {"ply": 35, "text": "Original teaching interpretation: Kf1 accepts an exposed king in the concrete position rather than insisting on the usual rule that a king must stay behind its pawn cover. Such defense requires checking the forcing moves carefully."},
+        {"ply": 47, "text": "Original teaching interpretation: Kc2 completes the king's journey away from the kingside attack. White's defense has depended on concrete calculation rather than a normal castled structure."},
+        {"ply": 69, "text": "Original teaching interpretation: b7 makes the passed pawn a major practical threat. The lesson is to seek counterplay while defending, not merely to parry every attack."},
+        {"ply": 71, "text": "Original teaching interpretation: Bxf7+ is the last move in the fetched record. The source reports 1-0; this is not a checkmate position, so no continuation or mating claim is supplied."}
+      ],
+      "verification": {"legal_replay": true, "parser_errors": [], "plies": 71, "last_san": "Bxf7+", "method": "Fetched source PGN parsed by python-chess; every main-line move replayed legally and SAN regenerated from the board."}
+    },
+    {
+      "id": "fischer-spassky-1992-1",
+      "title": "Fischer–Spassky, 1992 rematch game 1 — Breyer maneuvering",
+      "white": "Robert James Fischer", "black": "Boris Spassky", "event": "St Stefan/Belgrade m", "year": 1992, "result": "1-0", "variation": "Closed Ruy Lopez, Breyer Variation (C95)",
+      "source": "https://www.pgnmentor.com/players/Fischer.zip",
+      "source_id": "pgnmentor-fischer",
+      "pgn_headers": {"Event": "St Stefan/Belgrade m", "Site": "Belgrade", "Date": "1992.??.??", "Round": "1", "White": "Fischer, Robert James", "Black": "Spassky, Boris V", "Result": "1-0", "ECO": "C95"},
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8 Nf1 Bf8 Ng3 g6 Bg5 h6 Bd2 Bg7 a4 c5 d5 c4 b4 Nh7 Be3 h5 Qd2 Rf8 Ra3 Ndf6 Rea1 Qd7 R1a2 Rfc8 Qc1 Bf8 Qa1 Qe8 Nf1 Be7 N1d2 Kg7 Nb1 Nxe4 Bxe4 f5 Bc2 Bxd5 axb5 axb5 Ra7 Kf6 Nbd2 Rxa7 Rxa7 Ra8 g4 hxg4 hxg4 Rxa7 Qxa7 f4 Bxf4 exf4 Nh4 Bf7 Qd4+ Ke6 Nf5 Bf8 Qxf4 Kd7 Nd4 Qe1+ Kg2 Bd5+ Be4 Bxe4+ Nxe4 Be7 Nxb5 Nf8 Nbxd6 Ne6 Qe5",
+      "notes": [
+        {"ply": 18, "text": "Original teaching interpretation: ...Nb8 is the Breyer retreat. Black spends time rerouting the knight to d7, where it supports e5 and leaves the c-pawn free to advance."},
+        {"ply": 25, "text": "Original teaching interpretation: Nf1 is the characteristic Spanish rerouting of the queenside knight. It is heading toward g3 rather than seeking immediate exchanges in the center."},
+        {"ply": 35, "text": "Original teaching interpretation: d5 closes the center. With central pawn contact reduced, maneuvering and play on the wings become especially important."},
+        {"ply": 43, "text": "Original teaching interpretation: Ra3 is a rook lift that also prepares coordination on the a-file. Rooks can change their operating rank before an open file becomes available."},
+        {"ply": 65, "text": "Original teaching interpretation: Ra7 penetrates the seventh rank after the a-file has opened. The earlier rook organization now has a concrete target."},
+        {"ply": 71, "text": "Original teaching interpretation: g4 challenges Black's advanced kingside pawns. A wing pawn break can become tactical even in a game that began with slow maneuvering."},
+        {"ply": 77, "text": "Original teaching interpretation: Bxf4 gives up the bishop after ...exf4. Follow the actual sequence rather than assuming that every capture of a pawn is simply material gain; White's queen and knights become active."},
+        {"ply": 99, "text": "Original teaching interpretation: Qe5 is the last recorded move and the source reports 1-0. The board is not checkmate; do not extend the score with an invented finish."}
+      ],
+      "verification": {"legal_replay": true, "parser_errors": [], "plies": 99, "last_san": "Qe5", "method": "Fetched source PGN parsed by python-chess; every main-line move replayed legally and SAN regenerated from the board."}
+    },
+    {
+      "id": "kasparov-kramnik-2000-1",
+      "title": "Kasparov–Kramnik, London 2000 game 1 — Berlin endgame",
+      "white": "Garry Kasparov", "black": "Vladimir Kramnik", "event": "Braingames WCC", "year": 2000, "result": "1/2-1/2", "variation": "Berlin Defense, queenless Berlin endgame (C67)",
+      "source": "https://www.pgnmentor.com/events/WorldChamp2000.pgn",
+      "source_id": "pgnmentor-wcc2000",
+      "pgn_headers": {"Event": "Braingames WCC", "Site": "London ENG", "Date": "2000.10.08", "Round": "1", "White": "Kasparov,G", "Black": "Kramnik,V", "Result": "1/2-1/2", "ECO": "C67"},
+      "moves": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5 Qxd8+ Kxd8 Nc3 Bd7 b3 h6 Bb2 Kc8 h3 b6 Rad1 Ne7 Ne2 Ng6 Ne1 h5 Nd3 c5 c4 a5 a4 h4 Nc3 Be6 Nd5 Kb7 Ne3 Rh5 Bc3 Re8 Rd2 Kc8 f4 Ne7 Nf2 Nf5",
+      "notes": [
+        {"ply": 6, "text": "Original teaching interpretation: ...Nf6 is the Berlin Defense. Black develops with an attack on e4 instead of first forcing the bishop to retreat with ...a6."},
+        {"ply": 9, "text": "Original teaching interpretation: d4 opens central lines after Black captures e4. White seeks activity and recovery of the pawn, not simply protection of the original e-pawn."},
+        {"ply": 12, "text": "Original teaching interpretation: ...dxc6 accepts doubled c-pawns but gives Black the bishop pair and opens lines. Pawn structure is only one part of the resulting balance."},
+        {"ply": 16, "text": "Original teaching interpretation: ...Kxd8 completes the queen exchange. Black cannot castle, but with queens gone the king can be reorganized instead of facing the usual middlegame mating dangers."},
+        {"ply": 32, "text": "Original teaching interpretation: ...c5 challenges White's central control and activates the doubled c-pawn structure. A structural weakness can still be used dynamically."},
+        {"ply": 42, "text": "Original teaching interpretation: ...Rh5 activates the rook laterally. In a queenless position, useful rook activity can matter more than a conventional-looking placement."},
+        {"ply": 47, "text": "Original teaching interpretation: f4 supports White's e5 pawn but also changes the squares available to both sides. Even an apparently solid pawn move deserves a square-by-square assessment."},
+        {"ply": 50, "text": "Original teaching interpretation: ...Nf5 is the last move in the source's drawn game. The result is a recorded draw, not a claim that the board position is an automatic stalemate or a forced draw proved here."}
+      ],
+      "verification": {"legal_replay": true, "parser_errors": [], "plies": 50, "last_san": "Nf5", "method": "Fetched source PGN parsed by python-chess; every main-line move replayed legally and SAN regenerated from the board."}
+    }
+  ],
+  "limitations": [
+    "PGN Mentor is a secondary game database, not an archival facsimile. Completeness means the entire supplied game score through its recorded final move; resigned and agreed-draw games need not end in mate or stalemate.",
+    "No exact day is asserted for the 1918 or 1992 games because their fetched PGN Date headers use unknown month and day.",
+    "Initial requests without a descriptive User-Agent were blocked by Wikimedia or returned access errors; retrying with RuyLopezEducationalResearch/1.0 and the download URLs found on PGN Mentor's index succeeded.",
+    "These are three distinct Black systems within the Ruy Lopez. The Marshall and Breyer both begin with the Morphy move 3...a6; the Berlin branches with 3...Nf6."
+  ]
+}

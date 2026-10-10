@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6/3._Bb5",
+    "status": 200,
+    "bytes": 300126
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Ruy_Lopez",
+    "status": 200,
+    "bytes": 2077010
+  },
+  {
+    "url": "https://www.pgnmentor.com/files.html",
+    "status": 200,
+    "bytes": 534503
+  },
+  {
+    "url": "https://www.pgnmentor.com/players/Capablanca.zip",
+    "status": 200,
+    "bytes": 113671
+  },
+  {
+    "game": "capablanca-marshall-1918",
+    "metadata_match": true,
+    "legal_plies": 71,
+    "score_match": true
+  },
+  {
+    "url": "https://www.pgnmentor.com/players/Fischer.zip",
+    "status": 200,
+    "bytes": 167491
+  },
+  {
+    "game": "fischer-spassky-1992-1",
+    "metadata_match": true,
+    "legal_plies": 99,
+    "score_match": true
+  },
+  {
+    "url": "https://www.pgnmentor.com/events/WorldChamp2000.pgn",
+    "status": 200,
+    "bytes": 9421
+  },
+  {
+    "game": "kasparov-kramnik-2000-1",
+    "metadata_match": true,
+    "legal_plies": 50,
+    "score_match": true
+  }
+]
